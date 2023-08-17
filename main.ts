@@ -1,0 +1,5 @@
+scene.setBackgroundImage(assets.image`myImage0`)
+let mySprite = sprites.create(assets.image`myImage1`, SpriteKind.Player)
+controller.moveSprite(mySprite, 100, 100)
+let projectile = sprites.createProjectileFromSide(assets.image`myImage2`, 50, 50)
+projectile.follow(mySprite, 50)
